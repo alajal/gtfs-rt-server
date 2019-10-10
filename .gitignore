@@ -1,0 +1,8 @@
+node_modules
+.idea
+.vagrant
+*.iml
+*.log
+
+/Vagrantfile
+/VehiclePositions.pb

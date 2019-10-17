@@ -11,13 +11,6 @@ request(requestSettings, function (error, response, body) {
         var feed = GtfsRealtimeBindings.transit_realtime.FeedMessage.decode(body);
         feed.entity.forEach(function(entity) {
             console.log("Vehicle " + entity.vehicle.vehicle.label);
-            if (entity.trip_update) {
-                console.log("Boom " + entity.trip_update);
-            }
         });
     }
 });
-
-
-//digitransiti kujul data
-//-> edasi publish brokerisse (õiguste teema, kust sisse anda parool, kasutajad)
